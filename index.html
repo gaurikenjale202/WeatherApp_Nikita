@@ -15,9 +15,48 @@
 		<div class="container">
 			<h3>WEATHER FORECAST</h3>
 			<form>
-				<input type="text" name="city" id="city_name" placeholder="Enter a city">
-				<button type="button" onclick="fetchCity()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1MD1vALI7hWzd5gEE5x8CWDy3NG0HZmo4FXJWuEgRQUHdGQq-yGLghW_8z-x_5KtSX24&usqp=CAU" alt="search icon" height="20px"></button>
-			</form>
+				<div class="component">
+					<div>
+				<input type="text" name="city" id="cityname" placeholder="Enter a city" autofocus>
+			</div>
+				
+		
+				<div class="btn">
+				<button type="button" class="srch_btn" onclick="fetchCity()"><img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="search icon" height="10px"></button>
+			</div>
+		</div>
+		<br>
+		<div align="center" style="margin-top: -10px">
+			<img src="https://play-lh.googleusercontent.com/aU3e8b1uXZkVIpYQqpZ9iNobzTqsJ3Zpwar-VxCjLV-IjCpKkjNVMDrXsoiZ4SiHYw" alt="weathericon" height="100px">
+		</div>
+		<div align="center" style="margin-top: 0px"> 
+			<span id="city">CITY NAME</span>
+			<br>
+			<span class="measurement" id="temp">0°C</span>
+		</div>
+		<div align="center" style="margin-top: 20px">
+			<table width="100%" cellpadding="10px">
+				<tr align="center">
+					<td>
+						<h5 class="headings">WIND SPEED</h5>
+						<span class="measurement" id="wind_speed">0 km/hr</span>
+					</td>
+					<td>
+						<h4 class="headings">HUMIDITY</h4>
+						<span class="measurement" id="humidity">0 g/kg</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+				
+			</table>
+		</form>
+		</div>
+	</div>
+</div>
+			
+			
 			
 		</div>
 		
